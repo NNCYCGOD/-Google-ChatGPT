@@ -29,7 +29,7 @@ Asyncio
 
 🛠 Как развернуть
 Клонируйте репозиторий:
-git clone https://github.com/NNCYCGOD/sales-bot.git
+git clone https://github.com/NNCYCGOD/-Google-ChatGPT
 cd sales-bot
 
 Установите зависимости:
