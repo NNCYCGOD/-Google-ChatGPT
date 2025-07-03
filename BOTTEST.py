@@ -11,7 +11,7 @@ import re
 SCOPES = ['https://spreadsheets.google.com/feeds', 'https://www.googleapis.com/auth/drive']
 CREDS_FILE = r'C:\Users\User\Documents\BOT TEST\credentials.json'
 SPREADSHEET_ID = '1WRjKmmvgWq3BAygq18ay7M-hvyB3ju1kA7J6trRh3kM'
-TELEGRAM_TOKEN = '7569928262:AAHuqaoDul_BUQT4FELFIH8qMaZ1e6kL7Fg'
+TELEGRAM_TOKEN = 'your_TGBOT_key'
 OPENAI_API_KEY = 'your_openai_key'
 
 openai.api_key = OPENAI_API_KEY
