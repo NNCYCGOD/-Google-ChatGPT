@@ -1,3 +1,8 @@
+import os
+from dotenv import load_dotenv
+
+load_dotenv()
+
 import gspread
 from oauth2client.service_account import ServiceAccountCredentials
 from datetime import datetime, timedelta
@@ -9,13 +14,12 @@ import re
 
 # Параметры
 SCOPES = ['https://spreadsheets.google.com/feeds', 'https://www.googleapis.com/auth/drive']
-CREDS_FILE = r'C:\Users\User\Documents\BOT TEST\credentials.json'
-SPREADSHEET_ID = '1WRjKmmvgWq3BAygq18ay7M-hvyB3ju1kA7J6trRh3kM'
-TELEGRAM_TOKEN = 'your_TGBOT_key'
-OPENAI_API_KEY = 'your_openai_key'
+CREDS_FILE = os.getenv("CREDS_FILE")
+SPREADSHEET_ID = os.getenv("SPREADSHEET_ID")
+TELEGRAM_TOKEN = os.getenv("TELEGRAM_TOKEN")
+OPENAI_API_KEY = os.getenv("OPENAI_API_KEY")
 
 openai.api_key = OPENAI_API_KEY
-
 # Авторизация
 creds = ServiceAccountCredentials.from_json_keyfile_name(CREDS_FILE, SCOPES)
 client = gspread.authorize(creds)
